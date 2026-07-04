@@ -68,7 +68,7 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	overflow-x: hidden;
+	overflow-x: clip;
 }
 
 body {
@@ -189,12 +189,9 @@ li { margin-bottom: 0.35rem; }
 
 /* Header / nav */
 .site-header {
-	position: fixed;
+	position: sticky;
 	top: 0;
 	z-index: 99999;
-	width: 100%;
-	left: 0;
-	right: 0;
 	background: rgba(250, 246, 238, 0.92);
 	backdrop-filter: saturate(1.4) blur(8px);
 	border-bottom: 1px solid var(--line);
